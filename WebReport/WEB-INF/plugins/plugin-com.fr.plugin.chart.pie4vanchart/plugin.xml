@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+    <id>com.fr.plugin.chart.pie4vanchart</id>
+    <name><![CDATA[饼图(新特性)]]></name>
+    <active>yes</active>
+    <version>1.0</version>
+    <env-version>8.0</env-version>
+    <vendor>finereport.eason</vendor>
+    <description><![CDATA[饼图(新特性)]]></description>
+    <change-notes><![CDATA[无]]></change-notes>
+    <extra-core>
+        <LocaleFinder class="com.fr.plugin.chart.locale.ChartLocaleFinder"/>
+        <JavaScriptFileHandler class="com.fr.plugin.chart.VanChartsBaseJavaScript"/>
+    </extra-core>
+    <extra-report/>
+    <extra-designer>
+    </extra-designer>
+
+    <extra-chart>
+        <IndependentChartProvider class="com.fr.plugin.chart.PieIndependentVanChart" plotID="PiePlot4VanChart"/>
+    </extra-chart>
+
+    <extra-chart-designer>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.PieIndependentVanChartInterface" plotID="PiePlot4VanChart"/>
+    </extra-chart-designer>
+</plugin>
